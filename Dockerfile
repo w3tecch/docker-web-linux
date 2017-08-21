@@ -20,14 +20,14 @@ RUN apt-get install -y nodejs
 
 ## Add Node.js dependencies
 
-### yarn
+### Add yarn
 RUN npm install -g yarn
 
-### bower
+### Add bower
 RUN npm install -g bower
 
-### gulp
+### Add gulp
 RUN npm install -g gulp
 
-### grunt-cli
+### Add grunt-cli
 RUN npm install -g grunt-cli
