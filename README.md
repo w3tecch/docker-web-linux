@@ -55,12 +55,12 @@ This are the available tags to use this runtime
 | **beta**   | Use image build from develop branch (experimental) |
 
 ### Build the Docker image
-```
+```shell
 docker build -t <image-name> .
 ```
 
 ### Run the Docker image and map port
-```
+```shell
 docker run -p <port-on-host>:<port-inside-docker-container> <image-name>
 ```
 
