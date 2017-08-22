@@ -28,6 +28,3 @@ RUN npm install -g bower@1.8.0
 
 ### Add gulp
 RUN npm install -g gulp@3.9.1
-
-### Add grunt-cli
-RUN npm install -g grunt-cli@1.2.0

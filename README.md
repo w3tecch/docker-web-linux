@@ -17,7 +17,6 @@ Before you start, make sure you have a recent version of [Docker](https://docs.d
 | **Yarn**   | 0.27.5 | Fast, reliable, and secure dependency management for Node.js |
 | **Bower**   | 1.8.0 | A package manager for the web |
 | **Gulp.js**   | 3.9.1 | A JavaScript toolkit used as a streaming build system |
-| **Grunt**   | 1.2.0 | A JavaScript task runner (similar to Gulp.js but more complex ) |
 
 ### Using Dockerfile only
 Get Dockerfile docs [here](https://docs.docker.com/glossary/?term=Dockerfile).
