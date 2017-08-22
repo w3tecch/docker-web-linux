@@ -2,6 +2,17 @@
 
 > An easy way to set up your linux based web development environment with all necessary components.
 
+## Table of contents
+* [Included Components](#included-components)
+* [Getting started](#getting-started)
+* [How to use](#how-to-use)
+  * [Using Dockerfile only](#using-dockerfile-only)
+  * [Using Docker Compose](#using-docker-compose)
+  * [Using Docker Compose](#using-docker-compose)
+  * [Available Tags](#available-tags)
+  * [Access web app](#access-web-app)
+* [License](#license)
+
 ## Included Components
 Following Components are included in this docker image
 
@@ -37,7 +48,7 @@ Get Docker Compose docs [here](https://docs.docker.com/compose/)
 
 You can find some example files [here](examples/docker-compose)
 
-#### Tags
+### Available Tags
 This are the available tags to use this runtime
 
 | Tag       | Description |
