@@ -1,6 +1,6 @@
 # Linux Docker Image for modern Web Development
 
-> An easy way to set up your linux based web development environment with all necessary components.
+> An easy way to set up your linux based web development environment with all necessary components. This images uses latest stable build from Debian (stretch)
 
 ## Table of contents
 * [Included Components](#included-components)
