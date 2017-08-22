@@ -21,7 +21,7 @@ RUN apt-get install -y nodejs
 ## Add Node.js dependencies
 
 ### Add yarn
-RUN npm install -g yarnf
+RUN npm install -g yarn
 
 ### Add bower
 RUN npm install -g bower
