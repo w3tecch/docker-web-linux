@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM debian:latest
 
 ## Add linux dependencies
 
@@ -21,7 +21,7 @@ RUN apt-get install -y nodejs
 ## Add Node.js dependencies
 
 ### Add yarn
-RUN npm install -g yarn
+RUN npm install -g yarnf
 
 ### Add bower
 RUN npm install -g bower

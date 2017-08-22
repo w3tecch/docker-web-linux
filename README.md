@@ -33,16 +33,16 @@ CMD [ 'yarn', 'start' ]
 
 ### Build the Docker image
 ```
-docker build -t <your-tag> .
+docker build -t <image-name> .
 ```
 
-### Run the Docker image
+### Run the Docker image and map port
 ```
-docker run -p 8080:8080 <your-tag>
+docker run -p <port-on-host>:<port-inside-docker-container> <image-name>
 ```
 
 ### Access web app
-Now you can access the web app using http://localhost:8080
+Now you can access the web app using http://localhost:<port-on-host>/
 
 ## License
 [MIT](/LICENSE)
