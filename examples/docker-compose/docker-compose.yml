@@ -1,0 +1,6 @@
+web-linux:
+  build: .
+  ports:
+    - "<port-on-host>:<port-inside-docker-container>"
+  volumes:
+    - .:/usr/src/app/:rw

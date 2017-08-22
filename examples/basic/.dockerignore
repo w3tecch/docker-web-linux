@@ -1,0 +1,6 @@
+# Don't copy those directories and files to Docker container
+node_modules
+npm-debug.log
+README.md
+.gitignore
+dist

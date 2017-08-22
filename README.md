@@ -18,32 +18,24 @@ Before you start, make sure you have a recent version of [Docker](https://docs.d
 ## How to use
 
 ### Using Dockerfile only
-Get Dockerfile docs [here](https://docs.docker.com/glossary/?term=Dockerfile).
+Get Dockerfile docs [here](https://docs.docker.com/glossary/?term=Dockerfile)
 
-**Example Dockerfile for your project**
+You can find some example files [here](/examples/basic)
+
+#### Build the Docker image
+```shell
+docker build -t <image-name> .
 ```
-# Use this runtime as a parent image
-FROM danautilus/web-linux:<tag>
 
-# Create work directory
-WORKDIR /usr/src/app
-
-# Install app dependencies
-COPY package.json yarn.lock ./
-RUN yarn install
-
-# Bundle app source
-COPY . .
-
-# Map port to the docker deamon
-EXPOSE 8080
-
-# Build and run the app
-CMD npm start
+#### Run the Docker image and map port
+```shell
+docker run -p <port-on-host>:<port-inside-docker-container> <image-name>
 ```
 
 ### Using Docker Compose
-Get Docker Compose docs [here](https://docs.docker.com/compose/).
+Get Docker Compose docs [here](https://docs.docker.com/compose/)
+
+You can find some example files [here](examples/docker-compose)
 
 #### Tags
 This are the available tags to use this runtime
@@ -52,16 +44,6 @@ This are the available tags to use this runtime
 | ----------- | ----------- |
 | **latest**   | Use image build from master branch (recommended) |
 | **beta**   | Use image build from develop branch (experimental) |
-
-### Build the Docker image
-```shell
-docker build -t <image-name> .
-```
-
-### Run the Docker image and map port
-```shell
-docker run -p <port-on-host>:<port-inside-docker-container> <image-name>
-```
 
 ### Access web app
 Now you can access the web app using `http://localhost:<port-on-host>/`
