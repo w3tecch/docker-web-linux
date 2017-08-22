@@ -15,7 +15,7 @@ RUN apt-get install -y curl
 RUN apt-get install -y bzip2
 
 ### Add gnupg2
-RUN apg-get install -y gnupg2
+RUN apt-get install -y gnupg2
 
 ### Add Node.js 8.x
 RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
