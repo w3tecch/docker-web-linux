@@ -11,10 +11,10 @@ Before you start, make sure you have a recent version of [Docker](https://docs.d
 
 **Example Dockerfile for your project**
 ```
-# Use an official Node.js runtime as a parent image
-FROM danautilus/web-linux:beta
+# Use this runtime as a parent image
+FROM danautilus/web-linux:<tag>
 
-# Create app directory
+# Create work directory
 WORKDIR /usr/src/app
 
 # Install app dependencies
@@ -28,8 +28,16 @@ COPY . .
 EXPOSE 8080
 
 # Build and run the app
-CMD [ 'yarn', 'start' ]
+CMD npm start
 ```
+
+#### Tags
+This are the tags to use this runtime
+
+| Tag       | Description |
+| ----------- | ----------- |
+| **latest**   | Use image build from master branch (recommended) |
+| **beta**   | Use image build from develop branch (experimental) |
 
 ### Build the Docker image
 ```
@@ -42,7 +50,7 @@ docker run -p <port-on-host>:<port-inside-docker-container> <image-name>
 ```
 
 ### Access web app
-Now you can access the web app using http://localhost:<port-on-host>/
+Now you can access the web app using `http://localhost:<port-on-host>/`
 
 ## License
 [MIT](/LICENSE)
