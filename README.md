@@ -44,6 +44,8 @@ docker run -p <port-on-host>:<port-inside-docker-container> <image-name>
 ```
 
 ### Using Docker Compose
+Compose is a tool for defining and running multi-container Docker applications. This is recommended for web development as you can use features like hot deployment and live reloading on your local machine
+
 Get Docker Compose docs [here](https://docs.docker.com/compose/)
 
 You can find some example files [here](examples/docker-compose)
