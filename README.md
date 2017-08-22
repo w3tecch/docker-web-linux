@@ -5,18 +5,17 @@
 ## Included Components
 Following Components are included in this docker image
 
-
-
-## Getting started
-Before you start, make sure you have a recent version of [Docker](https://docs.docker.com/engine/installation/) installed
-
-## How to use
 | Component       | Version | Description |
 | ----------- | ----------- | ----------- |
 | **Node.js**   | 8.4.0 | JavaScript runtime built on Chrome's V8 JavaScript engine |
 | **Yarn**   | 0.27.5 | Fast, reliable, and secure dependency management for Node.js |
 | **Bower**   | 1.8.0 | A package manager for the web |
 | **Gulp.js**   | 3.9.1 | A JavaScript toolkit used as a streaming build system |
+
+## Getting started
+Before you start, make sure you have a recent version of [Docker](https://docs.docker.com/engine/installation/) installed
+
+## How to use
 
 ### Using Dockerfile only
 Get Dockerfile docs [here](https://docs.docker.com/glossary/?term=Dockerfile).
