@@ -1,6 +1,6 @@
 # Linux Docker Image for modern Web Development
 
-> An easy way to set up your linux based web development environment.
+> An easy way to set up your linux based web development environment with all necessary components.
 
 ## Included Components
 Following Components are included in this docker image
