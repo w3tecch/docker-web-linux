@@ -9,6 +9,7 @@ RUN apt-get install -y sudo
 RUN rm -rf /var/lib/apt/lists/* 
 
 ### Add curl
+RUN apt-get update
 RUN apt-get install -y curl
 
 ### Add bzip2
