@@ -1,9 +1,10 @@
-FROM debian:stretch
+FROM debian:stretch-slim
 
 ## Add linux dependencies
 
-### Add sudo
 RUN apt-get update
+
+### Add sudo
 RUN apt-get install -y sudo
 RUN rm -rf /var/lib/apt/lists/* 
 
