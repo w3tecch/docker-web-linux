@@ -26,9 +26,3 @@ RUN apt-get install -y nodejs=6.11.2-1nodesource1~stretch1
 
 ### Add yarn
 RUN npm install -g yarn@0.27.5
-
-### Add bower
-RUN npm install -g bower@1.8.0
-
-### Add gulp
-RUN npm install -g gulp@3.9.1
